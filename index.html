@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ET-SEED:Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy">
-  <meta name="keywords" content="Robotics Manipulation Equivariance">
+        content="Point-Level Visual Affordance Guided Retrieval and Adaptation for Cluttered Garments Manipulation">
+  <meta name="keywords" content="Point-Level Affordance Robotics Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ET-SEED:Efficient Trajectory-Level SE(3) Equivariant Diffusion Policy</title>
+  <title>Point-Level Visual Affordance Guided Retrieval and Adaptation for Cluttered Garments Manipulation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -89,10 +89,10 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ET-SEED:Trajectory-Level SE(3) Equivariant Diffusion Model for Robot Manipulation</h1>
+          <h1 class="title is-1 publication-title">Point-Level Visual Affordance Guided Retrieval and Adaptation for Cluttered Garments Manipulation</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://et-seed.github.io">Anonymous Authors<br></a></span>
+              <a href="https://garment-clutter.github.io">Anonymous Authors<br></a></span>
 <!--             <span class="author-block">
               <a href="https://crtie.github.io">Chenrui Tie</a><sup></sup>,</span>
             <span class="author-block">
@@ -123,7 +123,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://openreview.net/pdf?id=OheAR2xrtb"
+                <a href="https://openreview.net/pdf?id=mjQHzcziid"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -272,17 +272,16 @@
         <hr style="margin-top:0px">
         <div class="content has-text-justified">
           <p>
-            Imitation learning, e.g., diffusion policy, has proven effective in various robotic manipulation tasks. 
-            However, extensive demonstrations are required for policy robustness and generalization. 
-            To reduce the demonstration reliance, we leverage spatial symmetry and propose ET-SEED, an efficient 
-            trajectory-level SE(3) equivariant diffusion model for proposing action sequences in complex robot manipulation tasks. 
-            Further, previous equivariant diffusion models require the per-step equivariance in the Markov process, 
-            making it difficult to learn policy under such strong constraints. We theoretically extend equivariant
-            Markov kernels and simplify the condition of equivariant diffusion process, thereby significantly
-            improving training efficiency for trajectory-level SE(3) equivariant diffusion policy in an end-to-end manner. 
-            We evaluate ET-SEED on representative robotic manipulation tasks, involving rigid body, articulated and deformable object. 
-            Experiments demonstrate superior data efficiency and manipulation proficiency of our proposed method, 
-            as well as its ability to generalize to unseen configurations with only a few demonstrations. 
+            Cluttered garments manipulation poses significant challenges in robotics due to the complex, 
+            deformable nature of garments and intricate garment relations. 
+            Unlike single-garment manipulation, cluttered scenarios require managing complex garment entanglements and interactions, 
+            while maintaining garment cleanliness and manipulation stability. 
+            To address these demands, we propose to learn point-level affordance, 
+            the dense representation modeling the complex space and multi-modal manipulation candidates, 
+            with novel designs for the awareness of garment geometry, structure, and inter-object relations. 
+            Additionally, we introduce an adaptation module, informed by learned affordance, 
+            to reorganize cluttered garments into configurations conducive to manipulation. 
+            Our framework demonstrates effectiveness over environments featuring diverse garment types and pile scenarios in both simulation and the real world.
           </p>
         </div>
       </div>
